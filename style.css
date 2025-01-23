@@ -1,0 +1,103 @@
+html {
+    background-color: #f3eddd;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    font-size: max(1rem, 3vw);
+}
+
+.container {
+    height: 100vh;
+    overflow-y: scroll;
+    animation: fadeIn 0.5s forwards;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.section {
+    overflow: hidden;
+    height: 100vh;
+    scroll-snap-align: start;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 1% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.homePageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.homePageText {
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: left;
+    height: auto;
+    float: left;
+    width: 50%;
+}
+
+.homePageHeader {
+    display: block;
+    font-family: 'chunkfive', sans-serif;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.95;
+    color: #412e23;
+    margin-bottom: 10px;
+}
+
+.homePageDescription {
+    display: flex;
+    font-family: 'Cerebri Sans', sans-serif;
+    font-size: 33px;
+    font-weight: 200;
+    line-height: 0.95;
+    color: #412e23;
+    margin-top: 0;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.homePageImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    margin-top: 30px;
+    margin-right: -150px;
+    width: 50%;
+    scale: 1.2;
+}
+
+@font-face {
+    font-family: 'chunkfive';
+    src: url('path/to/chunkfive.woff2') format('woff2'), url('path/to/chunkfive.woff') format('woff');
+    font-family: 'Cerebri Sans';
+    src: url('https://fonts.gstatic.com/s/cerebrisans/v6/mtG94_QS6_Z2f2J4LXx8Zl5mXw.woff2') format('woff2');
+}
+
+@media (min-width: 1280px) {
+    .homePageContainer {
+        flex-direction: row;
+    }
+}
