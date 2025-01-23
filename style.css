@@ -1,14 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Sora:wght@100..800&display=swap');
 html {
     background-color: #f3eddd;
 }
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 p {
     font-size: max(1rem, 3vw);
 }
+
+
+
+
+
+/*NAVIGATION BAR STYTLE*/
+nav {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0;
+}
+
+.left-nav-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.left-nav-buttons button {
+    border: 0px;
+    background-color: transparent;
+    color: #412e23;
+    font-family: anton;
+    font-size: 1.5rem;
+}
+
+.left-nav-buttons a {
+    text-decoration: none;
+    color: #412e23;
+    font-family: 'Cerebri Sans', sans-serif;
+}
+
+.dropdown-content {
+    display: none;
+    flex-direction: column;
+}
+
+.middle-nav-logo {
+    font-family: alfa slab one;
+    color: #412e23;
+    font-size: 1.5rem;
+}
+
+.right-nav-buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+
+
 
 .container {
     height: 100vh;
