@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bevan:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bevan:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 html {
     background-color: #f3eddd; 
 }
@@ -20,6 +19,7 @@ p {
     justify-content: space-between; 
     padding: 5px 10px;
     margin-top: -30px;
+    background-color: transparent;
 }
 
 .left-nav-buttons {
@@ -118,13 +118,13 @@ p {
     font-weight: 500;
     color: #D94A26;
     font-size: 30px;
-    margin-left: -100px;
+    margin-left: -90px;
 }
 
 .right-nav-buttons {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 30px;
     justify-content: flex-start; 
     margin-right: 30px;
 }
@@ -190,9 +190,9 @@ p {
 
 .homePageDescription {
     display: flex;
-    font-family: 'Cerebri Sans', sans-serif;
+    font-family: "Lato", serif;
     font-size: 33px;
-    font-weight: 200;
+    font-weight: 500;
     line-height: 0.95;
     color: #412e23;
     margin-top: 0;
