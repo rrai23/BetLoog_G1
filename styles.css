@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bevan:ital@0;1&display=swap');
 html {
     background-color: #f3eddd; 
 }
@@ -175,14 +176,16 @@ p {
     width: 50%;
 }
 
-.homePageHeader {
+.homePageHeader{
     display: block;
-    font-family: 'chunkfive', sans-serif;
-    font-size: 80px;
-    font-weight: 900;
-    line-height: 0.95;
+    font-family: 'Bevan', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 0.99;
     color: #412e23;
     margin-bottom: 10px;
+    margin-top: -150px;
+    font-style: italic;
 }
 
 .homePageDescription {
