@@ -5,30 +5,26 @@
     <title>idk lol</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="container">
-        <!--NAVIGATION BAR-->
-        <nav>
+    <header>
+        <nav class = "navbar">
             <div class="left-nav-buttons">
-                <button id="nav-home-button">Home</button>
-
-                <div class="dropdown">
-                    <div class="dropdown-button-container">
-                        <button id="nav-recipes-button">Recipes</button>
-                        <img src="images/nav-bar-images/arrow-down-icon.png" alt="arrow-down-icon">
-                    </div>
-                    <div class="dropdown-content">
-                        <a href="#sunnySideUp">Sunny Side-up</a>
-                        <a href="#boiledEgg">Boiled Egg</a>
-                        <a href="#omelette">Omelette</a>
-                    </div>
-                </div>
-
-                <button id="nav-quiz-button">Quiz</button>
+                <ul class = "leftbuttons">
+                    <li><a href = "#">Home</a></li>
+                        <li class="dropdown">
+                            <a href = "#">Recipes</a>
+                            <ul class="dropdown-content">
+                                <li><a href="#sunnySideUp">Sunny Side-up</a></li>
+                                <li><a href="#boiledEgg">Boiled Egg</a></li>
+                                <li><a href="#omelette">Omelette</a></li>
+                            </ul>
+                        </li>
+                </ul>
             </div>
+
 
             <div class="middle-nav-logo">
                 <p>Betloog Blogs</p>
@@ -40,10 +36,13 @@
                 <img src="images/nav-bar-images/x-icon.png" alt="x-icon">
             </div>
         </nav>
+    </header>
+        <!--NAVIGATION BAR-->
+        
 
 
     <!--HOME PAGE-->
-        <section class="section id = " homePage ">
+        <section class="section id = "homePage">
             <div class="homePageContainer ">
                 <div class="homePageText ">
                     <div class="homePageHeader ">

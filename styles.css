@@ -13,56 +13,111 @@ p {
     font-size: max(1rem, 3vw);
 }
 
-
-
-
-
-/*NAVIGATION BAR STYTLE*/
 .navbar{
-    position: absolute;
-    z-index: 100;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 0 1.5rem;
-    margin: 0;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 5px 10px;
+    margin-top: -30px;
 }
 
 .left-nav-buttons {
     display: flex;
     flex-direction: row;
+    gap: 20px; 
+    align-items: center; 
+    justify-content: flex-start; 
 }
+
+.leftbuttons {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 40px;
+}
+
 .leftbuttons li {
     font-family: 'Anton', serif;
-    font-weight: 600;
+    font-weight: 500;
     color: #412e23;
     font-style: normal;
-}
-
-.left-nav-buttons button {
-    border: 0px;
-    background-color: transparent;
-    color: #412e23;
-    font-family: anton;
-    font-size: 1.5rem;
-}
-
-.left-nav-buttons a {
     text-decoration: none;
-    color: #412e23;
-    font-family: 'Cerebri Sans', sans-serif;
+    margin-right: 50px;
+    font-size: 25px;
+
 }
+
+.leftbuttons li a {
+    text-decoration: none; 
+    color: #412e23; 
+} 
+
+.leftbuttons li a:hover {
+    text-decoration: underline; 
+    text-decoration-color: #D94A26; 
+    text-decoration-thickness: px; 
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
 
 .dropdown-content {
-    display: none;
-    flex-direction: column;
+    list-style-type: none;
+    position: absolute;
+    display: none; 
+    top: 100%; 
+    left: 0;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: #f3eddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
 }
 
-.middle-nav-logo {
-    font-family: alfa slab one;
-    color: #412e23;
-    font-size: 1.5rem;
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+
+.dropdown-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.dropdown-content li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    pointer-events: auto; 
+    font-size: 20px;
+    color: #412e23; 
+}
+
+
+.dropdown-content li a:hover {
+    background-color: #D94A26;
+    border-radius: 20px;
+    color: #FCEBD1;
+}
+.middle-nav-logo{
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 500;
+    color: #D94A26;
+    font-size: 30px;
+    margin-left: -60px;
 }
 
 .right-nav-buttons {
@@ -78,6 +133,7 @@ p {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 
 .section {
     overflow: hidden;
@@ -147,17 +203,4 @@ p {
     margin-right: -150px;
     width: 50%;
     scale: 1.2;
-}
-
-@font-face {
-    font-family: 'chunkfive';
-    src: url('path/to/chunkfive.woff2') format('woff2'), url('path/to/chunkfive.woff') format('woff');
-    font-family: 'Cerebri Sans';
-    src: url('https://fonts.gstatic.com/s/cerebrisans/v6/mtG94_QS6_Z2f2J4LXx8Zl5mXw.woff2') format('woff2');
-}
-
-@media (min-width: 1280px) {
-    .homePageContainer {
-        flex-direction: row;
-    }
 }
