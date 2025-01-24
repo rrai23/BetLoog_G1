@@ -117,12 +117,15 @@ p {
     font-weight: 500;
     color: #D94A26;
     font-size: 30px;
-    margin-left: -60px;
+    margin-left: -100px;
 }
 
 .right-nav-buttons {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start; 
+    margin-right: 30px;
 }
 
 
