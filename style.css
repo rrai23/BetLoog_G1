@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 html {
-    background-color: #f3eddd;
+    background-color: #f3eddd; 
 }
 
 body {
@@ -40,6 +41,12 @@ nav {
     width: 1.5rem;
     cursor: pointer;
     margin-left: -4px;
+}
+.leftbuttons li {
+    font-family: 'Anton', serif;
+    font-weight: 600;
+    color: #412e23;
+    font-style: normal;
 }
 
 .left-nav-buttons button {
@@ -125,14 +132,8 @@ nav {
 }
 
 
-
-
-
-
-
 .container {
     height: 100vh;
-    overflow-y: scroll;
     animation: fadeIn 0.5s forwards;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
