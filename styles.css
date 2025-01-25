@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bevan:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url(flipCard.css);
+
+html {
+    background-color: #f3eddd; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: max(1rem, 3vw);
+}
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 5px 10px;
+    background-color: #e7d5a2;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    height: 10%;
+    z-index: 100; 
+}
+
+.left-nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    align-items: center; 
+    justify-content: flex-start; 
+}
+
+.leftbuttons {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    flex-direction: row; 
+    margin-left: 40px;
+}
+
+.leftbuttons li {
+    font-family: 'Anton', serif;
+    font-weight: 500;
+    color: #412e23;
+    font-style: normal;
+    text-decoration: none;
+    margin-right: 50px;
+    font-size: 25px;
+
+}
+
+.leftbuttons li a {
+    text-decoration: none; 
+    color: #412e23; 
+} 
+
+.leftbuttons li a:hover {
+    text-decoration: underline; 
+    text-decoration-color: #D94A26; 
+    text-decoration-thickness: px; 
+}
+
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    list-style-type: none;
+    position: absolute;
+    display: none; 
+    top: 100%; 
+    left: 0;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background-color: #f3eddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+
+.dropdown-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.dropdown-content li a {
+    text-decoration: none;
+    padding: 8px 15px;
+    pointer-events: auto; 
+    font-size: 20px;
+    color: #412e23; 
+}
+
+.dropdown-content li a:hover {
+    background-color: #D94A26;
+    border-radius: 20px;
+    color: #FCEBD1;
+}
+.middle-nav-logo p {
+    font-family: 'Alfa Slab One', serif;
+    font-weight: 500;
+    color: #D94A26;
+    font-size: 24px;
+    margin-left: -90px;
+}
+
+.right-nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-start; 
+    margin-right: 30px;
+}
+
+
+.container {
+    height: 100vh;
+    animation: fadeIn 0.5s forwards;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.section {
+    overflow: hidden;
+    height: 100vh;
+    scroll-snap-align: start;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 1% cover 40%;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.homePageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.homePageText {
+    margin-left: 50px;
+    margin-top: 50px;
+    text-align: left;
+    height: auto;
+    float: left;
+    width: 50%;
+}
+
+.homePageHeader{
+    display: block;
+    font-family: 'Bevan', sans-serif;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 0.99;
+    color: #412e23;
+    margin-bottom: 10px;
+    margin-top: -150px;
+    font-style: italic;
+}
+
+.homePageDescription {
+    display: flex;
+    font-family: "Lato", serif;
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 0.95;
+    color: #412e23;
+    margin-top: 0;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+.homePageImage {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    margin-top: 30px;
+    margin-right: -150px;
+    width: 50%;
+    scale: 1.2;
+}
+
+/* SunnySide Up */
+
+#sunnySideUp, #boiledEgg, #omelette {
+    padding: 50px 60px 50px 60px;
+}
+
+.container-content {
+    display: flex;
+    padding: 20px 0px 0px 20px;
+    gap: 50px 50px;
+}
+
+.leftSide {
+    width: 1000px;
+    height: 500px;
+    align-content: center;
+    padding: 20px;
+}
+
+.tutorialHeaders h5 {
+    display: block;
+    font-family: 'Bevan', sans-serif;
+    font-size: 44px;
+    font-weight: 100;
+    color: #412e23;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.tutorialDescription {
+    display: flex;
+    font-family: "Lato", serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #412e23;
+    text-align: justify;
+}
