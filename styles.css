@@ -1,9 +1,8 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bevan:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url(flipCard.css);
 
 html {
-    background-color: #f3eddd; 
+    background-color: #f3eddd;
 }
 
 body {
@@ -19,59 +18,60 @@ p {
 
 .navbar {
     display: flex;
-    align-items: center; 
-    justify-content: space-between; 
+    align-items: center;
+    justify-content: space-between;
     padding: 9px 10px;
-    background-color:#f3eddd;
-    position: fixed; 
-    top: -3px; 
-    width: 100%; 
+    background-color: #f3eddd;
+    position: fixed;
+    top: -3px;
+    width: 100%;
     height: 10%;
-    z-index: 100; 
+    z-index: 100;
 }
 
 .left-nav-buttons {
     display: flex;
     flex-direction: row;
-    gap: 20px; 
-    align-items: center; 
-    justify-content: flex-start; 
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-.dropdown{
-    position: relative; 
+.dropdown {
+    position: relative;
     display: inline-block;
 
 }
-.head a{
+
+.head a {
     gap: 10px;
     margin-left: 40px;
     text-decoration: none;
     font-family: 'Anton', serif;
     font-size: 25px;
     font-weight: 550;
-    color:#412e23 ;
+    color: #412e23;
     border: #412e23;
-    box-shadow: 0px 10px 20px 0 rgba(252, 252, 252 , 0);
+    box-shadow: 0px 10px 20px 0 rgba(252, 252, 252, 0);
     border-radius: 10%;
-    
+
 }
 
 .head a:hover {
-    text-decoration: underline; 
-    text-decoration-color: #D94A26; 
-    text-decoration-thickness: 3px; 
+    text-decoration: underline;
+    text-decoration-color: #D94A26;
+    text-decoration-thickness: 3px;
 }
 
 .dropdown:hover .dropdown-content {
-    display: block; 
+    display: block;
 }
 
-.dropdown-content{
+.dropdown-content {
     list-style-type: none;
     position: absolute;
-    display: none; 
-    top: 100%; 
+    display: none;
+    top: 100%;
     left: 0;
     width: 200px;
     padding: 10px 0;
@@ -85,24 +85,24 @@ p {
 .dropdown-content a {
     text-decoration: none;
     font-family: 'Anton', serif;
-    pointer-events: auto; 
+    pointer-events: auto;
     font-size: 20px;
     color: #412e23;
     gap: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 40px; 
+    border-radius: 40px;
     transition: background-color 0.3s ease, color 0.3s ease, padding 0.3s ease;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .dropdown-content a:hover {
     background-color: #D94A26;
     color: #FCEBD1;
-    padding: 9px 1px; 
-    border-radius: 40px; 
-    width: auto; 
+    padding: 9px 1px;
+    border-radius: 40px;
+    width: auto;
 }
 
 .middle-nav-logo p {
@@ -117,7 +117,7 @@ p {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    justify-content: flex-start; 
+    justify-content: flex-start;
     margin-right: 55px;
 }
 
@@ -145,6 +145,7 @@ p {
         opacity: 0;
         scale: 0.5;
     }
+
     to {
         opacity: 1;
         scale: 1;
@@ -168,7 +169,7 @@ p {
     width: 50%;
 }
 
-.homePageHeader{
+.homePageHeader {
     display: block;
     font-family: 'Bevan', sans-serif;
     font-size: 90px;
@@ -204,18 +205,20 @@ p {
 }
 
 .videoContainer video {
-    width: 100%; 
-    max-width: 700px; 
-    height: auto; 
-    border-radius: 20px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
-    overflow: hidden; 
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
 
 /* SunnySide Up */
 
-#sunnySideUp, #boiledEgg, #omelette {
+#sunnySideUp,
+#boiledEgg,
+#omelette {
     padding: 50px 60px 50px 60px;
 }
 
@@ -258,14 +261,97 @@ p {
     text-align: center;
     margin: 20px auto;
     padding: 20px;
-  }
-  
-  .toggle-checkbox {
+}
+
+.toggle-checkbox {
     display: none;
-  }
-  
-  .toggle-button {
+}
+
+.toggle-button {
     font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-family: 'Anton', serif;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #412e23;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #412e23;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.toggle-button:before {
+    border-radius: 8px;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #412e23;
+    z-index: -1;
+}
+
+.toggle-button:hover {
+    color: white;
+}
+
+.toggle-button:hover:before,
+.toggle-button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.toggle-button:active {
+    transform: scale(0.9);
+}
+
+.hidden-section {
+    max-height: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    overflow: hidden;
+    transition: transform 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 20px;
+    background-color: #f8f4f2;
+    border: 3px solid #412e23;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-checkbox:checked~.hidden-section {
+    max-height: 500px;
+    transform: scaleY(1);
+    padding: 20px;
+}
+
+/* INSIDE QUIZ */
+/* QUIZ Style */
+.container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.toggle-checkbox {
+    display: none;
+}
+
+.toggle-button {
+    font-size: 18px;
     letter-spacing: 2px;
     text-transform: uppercase;
     display: inline-block;
@@ -282,9 +368,9 @@ p {
     z-index: 1;
     overflow: hidden;
     cursor: pointer;
-  }
+}
 
-  .toggle-button:before {
+.toggle-button:before {
     border-radius: 8px;
     transition: 0.5s all ease;
     position: absolute;
@@ -296,45 +382,171 @@ p {
     content: '';
     background-color: #412e23;
     z-index: -1;
-  }
+}
 
-  .toggle-button:hover {
+.toggle-button:hover {
     color: white;
-  }
+}
 
-  .toggle-button:hover:before,
+.toggle-button:hover:before,
 .toggle-button:focus:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
 }
 
 .toggle-button:active {
-  transform: scale(0.9);
+    transform: scale(0.9);
 }
-  
-  .hidden-section {
+
+.hidden-section {
     max-height: 0;
-    transform: scaleY(0); 
-    transform-origin: top; 
+    transform: scaleY(0);
+    transform-origin: top;
     overflow: hidden;
     transition: transform 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
-    padding: 0 20px;
+    padding: 20px 20px;
     background-color: #f8f4f2;
     border: 3px solid #412e23;
     border-radius: 12px;
-    margin-top: 20px;
+    border-radius: 20px;
+    margin: 20px auto;
+    width: 600px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .toggle-checkbox:checked ~ .hidden-section {
-    max-height: 500px; 
-    transform: scaleY(1); 
+}
+
+.toggle-checkbox:checked~.hidden-section {
+    max-height: 800px;
+    transform: scaleY(1);
     padding: 20px;
-  }
+}
 
-  /* INSIDE QUIZ */
+/* INSIDE QUIZ */
+/* Scroll Wrapper */
+.scroll-wrapper {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f4f2;
+}
 
- 
-  
+/* Scrollbar Styling */
+.scroll-wrapper::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.scroll-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.scroll-wrapper::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+
+/* Radio styling something blah blaj */
+.radio-input input {
+    display: none;
+}
+
+.radio-input {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: #fff;
+    color: #000;    
+    border-radius: 10px;
+    box-shadow: 0px 87px 78px -39px rgba(0, 0, 0, 0.4);
+    width: 95%;
+}
+
+.info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.question {
+    color: rgb(49, 49, 49);
+    font-size: 1rem;
+    line-height: 1rem;
+    font-weight: 800;
+}
+
+.steps {
+    background-color: rgb(0, 0, 0);
+    padding: 4px;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 600;
+}
+
+.radio-input label {
+    display: flex;
+    background-color: #fff;
+    padding: 14px;
+    margin: 8px 0 0 0;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid rgba(187, 187, 187, 0.164);
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.radio-input label:hover {
+    background-color: rgba(24, 24, 24, 0.13);
+    border: 1px solid #bbb;
+}
+
+.radio-input input:checked+label {
+    border-color: red;
+    color: red;
+}
+
+/* Success/Failure Display */
+.radio-input input:checked+label {
+    background-color: #ffe5e5;
+    border-color: red;
+    color: red;
+}
+
+.radio-input input[value="value-1"]:checked+label,
+.radio-input input[value="value-7"]:checked+label,
+.radio-input input[value="value-11"]:checked+label,
+.radio-input input[value="value-13"]:checked+label,
+.radio-input input[value="value-20"]:checked+label,
+.radio-input input[value="value-22"]:checked+label,
+.radio-input input[value="value-27"]:checked+label,
+.radio-input input[value="value-30"]:checked+label,
+.radio-input input[value="value-34"]:checked+label,
+.radio-input input[value="value-38"]:checked+label,
+.radio-input input[value="value-41"]:checked+label,
+.radio-input input[value="value-46"]:checked+label,
+.radio-input input[value="value-49"]:checked+label,
+.radio-input input[value="value-54"]:checked+label,
+.radio-input input[value="value-58"]:checked+label,
+.radio-input input[value="value-62"]:checked+label,
+.radio-input input[value="value-66"]:checked+label,
+.radio-input input[value="value-70"]:checked+label,
+.radio-input input[value="value-75"]:checked+label,
+.radio-input input[value="value-79"]:checked+label {
+    background-color: #e5ffe5;
+    border-color: green;
+    color: green;
+}
