@@ -14,6 +14,9 @@ p {
 }
 
 
+
+
+
 /*NAVIGATION BAR STYTLE*/
 nav {
     position: fixed;
@@ -188,7 +191,7 @@ nav {
 .homePageDescription {
     display: flex;
     font-family: 'Cerebri Sans', sans-serif;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 200;
     line-height: 0.95;
     color: #412e23;

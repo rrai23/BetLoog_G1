@@ -21,10 +21,10 @@ p {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 5px 10px;
-    background-color: #e7d5a2;
+    padding: 9px 10px;
+    background-color:#f3eddd;
     position: fixed; 
-    top: 0; 
+    top: -3px; 
     width: 100%; 
     height: 10%;
     z-index: 100; 
@@ -109,8 +109,8 @@ p {
     font-family: 'Alfa Slab One', serif;
     font-weight: 500;
     color: #D94A26;
-    font-size: 24px;
-    margin-left: -90px;
+    font-size: 50px;
+    margin-left: -130px;
 }
 
 .right-nav-buttons {
@@ -118,7 +118,7 @@ p {
     flex-direction: row;
     gap: 30px;
     justify-content: flex-start; 
-    margin-right: 30px;
+    margin-right: 55px;
 }
 
 
@@ -133,7 +133,7 @@ p {
 
 .section {
     overflow: hidden;
-    height: 110vh;
+    height: 100vh;
     scroll-snap-align: start;
     animation: appear linear;
     animation-timeline: view();
@@ -183,7 +183,7 @@ p {
 .homePageDescription {
     display: flex;
     font-family: "Lato", serif;
-    font-size: 33px;
+    font-size: 30px;
     font-weight: 500;
     line-height: 0.95;
     color: #412e23;
@@ -201,6 +201,15 @@ p {
     margin-right: -150px;
     width: 50%;
     scale: 1.2;
+}
+
+.videoContainer video {
+    width: 100%; 
+    max-width: 700px; 
+    height: auto; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
 }
 
 
@@ -229,7 +238,7 @@ p {
     font-size: 44px;
     font-weight: 100;
     color: #412e23;
-    font-style: italic;
+    font-style: normal;
     margin-bottom: 0;
 }
 
@@ -241,3 +250,91 @@ p {
     color: #412e23;
     text-align: justify;
 }
+
+
+/* QUIZ Style */
+
+.container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .toggle-checkbox {
+    display: none;
+  }
+  
+  .toggle-button {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid #412e23;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: #412e23;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .toggle-button:before {
+    border-radius: 8px;
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #412e23;
+    z-index: -1;
+  }
+
+  .toggle-button:hover {
+    color: white;
+  }
+
+  .toggle-button:hover:before,
+.toggle-button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.toggle-button:active {
+  transform: scale(0.9);
+}
+  
+  .hidden-section {
+    max-height: 0;
+    transform: scaleY(0); 
+    transform-origin: top; 
+    overflow: hidden;
+    transition: transform 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 20px;
+    background-color: #f8f4f2;
+    border: 3px solid #412e23;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-checkbox:checked ~ .hidden-section {
+    max-height: 500px; 
+    transform: scaleY(1); 
+    padding: 20px;
+  }
+
+  /* INSIDE QUIZ */
+
+ 
+  
