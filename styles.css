@@ -133,7 +133,7 @@ p {
 
 .section {
     overflow: hidden;
-    height: 100vh;
+    height: 110vh;
     scroll-snap-align: start;
     animation: appear linear;
     animation-timeline: view();
@@ -241,93 +241,3 @@ p {
     color: #412e23;
     text-align: justify;
 }
-
-
-
-
-/* QUIZ Style */
-
-.container {
-    text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  
-  .toggle-checkbox {
-    display: none;
-  }
-  
-  .toggle-button {
-    font-size: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    padding: 0.7em 2em;
-    border: 3px solid #412e23;
-    border-radius: 12px;
-    position: relative;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-    color: #412e23;
-    text-decoration: none;
-    transition: 0.3s ease all;
-    z-index: 1;
-    overflow: hidden;
-    cursor: pointer;
-  }
-
-  .toggle-button:before {
-    border-radius: 8px;
-    transition: 0.5s all ease;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    right: 50%;
-    bottom: 0;
-    opacity: 0;
-    content: '';
-    background-color: #412e23;
-    z-index: -1;
-  }
-
-  .toggle-button:hover {
-    color: white;
-  }
-
-  .toggle-button:hover:before,
-.toggle-button:focus:before {
-  transition: 0.5s all ease;
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
-
-.toggle-button:active {
-  transform: scale(0.9);
-}
-  
-  .hidden-section {
-    max-height: 0;
-    transform: scaleY(0); 
-    transform-origin: top; 
-    overflow: hidden;
-    transition: transform 0.5s ease, max-height 0.5s ease, padding 0.5s ease;
-    padding: 0 20px;
-    background-color: #f8f4f2;
-    border: 3px solid #412e23;
-    border-radius: 12px;
-    margin-top: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .toggle-checkbox:checked ~ .hidden-section {
-    max-height: 500px; 
-    transform: scaleY(1); 
-    padding: 20px;
-  }
-
-  /* INSIDE QUIZ */
-
- 
-  
