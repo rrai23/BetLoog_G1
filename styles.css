@@ -120,6 +120,10 @@ p {
     margin-right: 55px;
 }
 
+.right-nav-buttons img {
+    cursor: pointer;
+}
+
 .container {
     height: 100vh;
     animation: fadeIn 0.5s forwards;
